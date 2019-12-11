@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" type="text/css" href="source1.css">
+    <title> ou </title>
+    <style>
+        #page{   /* 페이지 크기*/
+            width:1050px;
+            margin:0 auto; /*양옆 마진*/
+        }
+      
+         header #logo{    /*로고위치 */
+            float:left;
+            margin:45px 0 0 20px;
+        }   
+         
+        header #top_menu{   /*로그인,회원가입,사이트소개 위치 지정 */ 
+            float:right;
+            margin: 50px 0 0 0;
+        }
+        a{
+            color: #000000;
+            text-decoration: none;
+        }
+        header #top_menu li{  /*로그인,회원가입 사이트소개 가로로 만드는 것*/
+            display: inline;
+                    }
+    
+        .line{    /*밑에 선 라인*/
+            margin-top: 25px;
+            border-top:solid 1px #1e1e30;  
+        }
+    
+        header nav ul{  /*멜론 dj.차트 마진 설정*/
+            margin-top: 25px;
+        }
+        header nav li{  /*멜론DJ,멜론TV,멜론차트 오른쪽으로 정렬*/
+            display: inline;
+        }
+        header nav li.item{ /*멜론DJ,멜론TV,멜론차트 왼쪽으로 마진*/
+            margin-left: 40px;
+        }
+
+        body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+        </style>
+    </head>
+    <body>
+<div id="page"> 
+    <header>
+        <a href="index.html"><img id="logo" src="img/mainlogo.PNG"></a>
+        <ul id="top_menu">
+            <a href="login.html"><li>로그인 |</li></a>
+            <a href="Singup.html"><li>회원가입 |</li></a>
+            <a href="Siteabout.html"><li>사이트소개 |</li></a>
+            <a href="Company.html"><li>회사소개</li></a>
+        </ul>
+        <div class="clear"></div>
+        <div class="line"></div>
+        <nav>
+        <ul>
+            <a href="1.html"><li><img src ="img/logo1.PNG"></li></a>
+            <a href="2.html"><li class="item"><img src="img/logo2.PNG"></li></a>
+            <a href="3.html"><li class="item"><img src="img/logo3.PNG"></li></a>
+            <a href="4.html"><li class="item"><img src="img/logo4.PNG"></li></a>
+            <a href="5.html"><li class="item"><img src="img/logo5.PNG"></li></a>
+        </ul>
+        </nav>
+    </header>
+</div>
+
+<form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</body>
+</html>
